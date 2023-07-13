@@ -1,0 +1,37 @@
+_________________________________________________________
+Verifique ambas versiones con los comandos respectivos.
+_________________________________________________________
+django-admin --version
+4.2.3
+py --version
+Python 3.11.0
+
+Identifique los diferentes archivos creados por Django al crear un proyecto y una aplicación. Describa en
+palabras simples la utilidad de cada script.
+
+_____________________
+Al crear un proyecto
+_____________________
+
+manage.py: Es un script de línea de comandos que actúa como punto de entrada para administrar el proyecto Django. Permite ejecutar tareas como iniciar el servidor de desarrollo, aplicar migraciones, crear superusuarios y más.
+
+settings.py: Es un archivo de configuración importante que define la configuración del proyecto Django. Aquí se especifican detalles como la base de datos utilizada, las aplicaciones instaladas, las configuraciones de autenticación y otras opciones de configuración relacionadas con el proyecto.
+
+urls.py: Es el archivo de URLconf principal del proyecto. Aquí se definen las URL y las correspondientes vistas o controladores para manejar las solicitudes entrantes. Se utiliza para mapear las URL a las vistas adecuadas.
+
+wsgi.py (opcional): Este archivo se utiliza cuando se despliega el proyecto en un servidor web compatible con WSGI (Web Server Gateway Interface). Ayuda a comunicarse entre el servidor web y la aplicación Django.
+
+asgi.py (opcional): Este archivo se utiliza cuando se despliega el proyecto en un servidor web compatible con ASGI (Asynchronous Server Gateway Interface). Ayuda a comunicarse entre el servidor web y la aplicación Django de forma asíncrona.
+
+________________________
+Al crear una aplicación
+________________________
+
+models.py: Aquí se definen los modelos de datos de la aplicación utilizando la sintaxis de Django ORM. Los modelos representan tablas de bases de datos y definen la estructura y las relaciones entre los datos.
+
+views.py: Este archivo contiene las funciones o clases que definen la lógica de las vistas de la aplicación. Aquí se procesan las solicitudes entrantes, se interactúa con los modelos y se devuelve una respuesta al cliente.
+
+urls.py: Al igual que en el proyecto, este archivo define las URL y las vistas correspondientes, pero se enfoca en las URL específicas de la aplicación.
+
+admin.py (opcional): Si se desea utilizar el panel de administración de Django, este archivo permite registrar los modelos de la aplicación para que puedan ser administrados y modificados a través del panel.
+

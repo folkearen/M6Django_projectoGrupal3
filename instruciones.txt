@@ -1,0 +1,15 @@
+Como primer ejercicio, levantaremos un servidor con Python, para que imprima el mensaje “Bienvenidos
+a TeLoVendo” en un navegador. Realícelo solo utilizando Python.
+
+
+Ahora cree un entorno virtual e instalen Django. Verifiquen la versión de Python y Django.
+Ahora desarrollaremos nuestro primer proyecto utilizando Django. El objetivo es que muestre el mensaje
+“Bienvenidos a TeLoVendo”.
+
+Identifique los diferentes archivos creados por Django al crear un proyecto y una aplicación. Describa en
+palabras simples la utilidad de cada script.
+
+Esta vez utilizaremos la arquitectura que nos brinda Django, para luego complejizar la aplicación. En esta
+primera instancia desarrollaremos una vista, basándonos en la documentación de Django en la página
+web de Django Project.
+
