@@ -35,3 +35,24 @@ urls.py: Al igual que en el proyecto, este archivo define las URL y las vistas c
 
 admin.py (opcional): Si se desea utilizar el panel de administración de Django, este archivo permite registrar los modelos de la aplicación para que puedan ser administrados y modificados a través del panel.
 
+
+______________________________________________________________
+Cómo generar un template, y conectarlo a ua views
+______________________________________________________________
+
+1.	Partiendo con el proyecto ya creado, seguir los siguientes pasos:
+2.	Crear una carpeta templates
+3.	Dentro de la carpeta templates, crear una carpeta con el nombre de la app (nombre_app)
+4.	Dentro de la carpeta (nombre_app) crear un archivo html (index.html)
+#para este caso usaremos index.html, en el caso de que la pagina tenga otro nombre, se debe cambiar todas las direcciones de index por el nombre del nuevo archivo#
+5.	En el archivo Urls.py agregar lo siguiente al diccionario urlpatterns:
+
+urlpatterns = [
+     …….
+    path('landing/', views.landing, name='landing-home')
+]
+
+6.	En el archive Views.py agregar la siguiente función:
+
+def landing(request):
+return render (request, 'home/index.html',)

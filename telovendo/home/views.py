@@ -1,14 +1,16 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-import datetime
-import locale
+from .models import Usuario
+
+
 
 # Create your views here.
 
 def bienvenida(request):
-    locale.setlocale(locale.LC_TIME, 'es_ES')
-    time = datetime.datetime.now().strftime('%A %d/%m/%Y %H:%M:%S').capitalize()
     return render(request, 'home/index.html', {
-        'time' : time
-    } )
+        } )
 
+def mostrarUsuario(request):
+    lista_usuario = Usuario.objects.all()
+    return render(request, 'home/mostrar_usuario.html', {
+        'lista_usuario' : lista_usuario
+    })

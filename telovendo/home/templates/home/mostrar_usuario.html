@@ -1,0 +1,7 @@
+{% extends 'home/layout/base.html' %}
+{% block main %}
+<h2>Mostrando usuarios</h2>
+{% for user in lista_usuario %}
+    <h4 class="usuarios">{{ user.nombre }}, {{ user.apellido }}, {{ user.rut }}, {{ user.email }}  , {{ user.fecha_registro }}</h4>
+{% endfor %}
+{% endblock main %} 
